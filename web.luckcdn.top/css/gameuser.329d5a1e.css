@@ -1,0 +1,427 @@
+.bonus-dialog {
+    background-color: #2f3e45;
+    border-radius: .7143rem
+}
+
+.bonus-dialog.van-popup {
+    background-image: linear-gradient(147deg, #ffa43b -78%, #2f3e45 30%);
+    width: 21.4286rem
+}
+
+.bonus-dialog.van-popup .user-vip {
+    font-size: 1rem;
+    position: relative;
+    min-width: 2.8571rem;
+    display: inline-block;
+    text-align: left;
+    height: auto
+}
+
+.bonus-dialog.van-popup .user-vip.user-vip-none {
+    filter: grayscale(1)
+}
+
+.bonus-dialog.van-popup .user-vip .svg-icon {
+    font-size: 1.8571rem;
+    position: relative;
+    z-index: 1
+}
+
+.bonus-dialog.van-popup .user-vip span {
+    display: inline-block;
+    background: linear-gradient(20deg, #f8b62d, #ffc800);
+    padding: 0 .2143rem;
+    border-bottom-right-radius: .1429rem;
+    border-top-right-radius: .1429rem;
+    border-top-left-radius: .1429rem;
+    color: #805005;
+    margin-left: -.2857rem;
+    transform: skewX(346deg) scale(.8);
+    font-size: 1.4286rem;
+    line-height: 1.4286rem
+}
+
+.bonus-dialog.van-popup .svg-icon-home {
+    margin-right: .2857rem
+}
+
+.bonus-dialog.van-popup .roll-id {
+    color: #0ee07b;
+    font-size: 1.2857rem
+}
+
+.bonus-dialog .bonus-user-vip {
+    position: absolute;
+    top: 15rem;
+    left: 0;
+    right: 0
+}
+
+.bonus-dialog .lucky-bonus {
+    position: relative;
+    height: 17.1429rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.bonus-dialog .lucky-bonus:before {
+    position: absolute;
+    top: 0;
+    content: "";
+    animation: bounceFirework .5s ease-out both;
+    width: 21.4286rem;
+    height: 14.2857rem;
+    background: url(../img/firework.9d6efd4f.svg) 50%/contain no-repeat
+}
+
+@keyframes bounceFirework {
+    0% {
+        opacity: 0;
+        transform: scale3d(.2, .2, .2)
+    }
+    80% {
+        opacity: 1;
+        transform: scale3d(.8, .8, .8)
+    }
+    to {
+        opacity: .6;
+        transform: scaleX(1)
+    }
+}
+
+.bonus-dialog .lucky-bonus .lucky-bonus-bg {
+    position: absolute;
+    width: 17.1429rem;
+    height: 17.1429rem;
+    filter: hue-rotate(90deg);
+    background: url(../img/luck-bg1.0ce3eba2.webp) 50%/contain no-repeat;
+    z-index: 0;
+    animation: rotateTurn 6s linear infinite
+}
+
+@keyframes rotateTurn {
+    0% {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+.bonus-dialog .lucky-bonus .lucky-bonus-img {
+    width: 7.1429rem;
+    animation: bounceIn 1s linear both;
+    position: relative
+}
+
+.bonus-dialog .lucky-bonus .lucky-bonus-img-daily {
+    width: 10.7143rem
+}
+
+.bonus-dialog .bonus-mode {
+    font-size: 1.4286rem;
+    padding: 0 .7143rem .7143rem .7143rem;
+    text-align: center;
+    color: #c0e445
+}
+
+.bonus-dialog .bonus-title {
+    font-size: 1.1429rem;
+    padding: 0 .7143rem 1.0714rem .7143rem;
+    text-align: center;
+    color: #fff
+}
+
+.bonus-dialog .bonus-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4286rem;
+    background-color: #28353b;
+    height: 2.8571rem;
+    margin: 0 auto;
+    width: 14.2857rem;
+    border-radius: .4286rem
+}
+
+.bonus-dialog .bonus-block .svg-icon-diamond,
+.bonus-dialog .bonus-block .svg-icon-gold,
+.bonus-dialog .bonus-block .svg-icon-gold-c {
+    margin-right: .4286rem
+}
+
+.bonus-dialog .bonus-block .prize-amount-text {
+    color: #ee2849;
+    text-align: center;
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent), linear-gradient(-90deg, #dfa61c 10%, #ee2849 90%) no-repeat;
+    -webkit-background-clip: text;
+    transition: transform .2s ease, opacity .2s ease;
+    opacity: 1;
+    transform: scale(1);
+    font-size: 1rem;
+    min-height: 1rem;
+    white-space: nowrap
+}
+
+.bonus-dialog .bonus-bottom-action {
+    padding: 1.4286rem 1.7143rem
+}
+
+.bonus-dialog .bonus-bottom-action .van-button {
+    background-image: linear-gradient(135deg, #72edf2 10%, #5151e5);
+    border: none;
+    border-radius: 1.4286rem;
+    height: 2.5714rem
+}
+
+.van-circle {
+    position: relative;
+    display: inline-block;
+    width: 7.1429rem;
+    height: 7.1429rem;
+    text-align: center
+}
+
+.van-circle svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.van-circle__layer {
+    stroke: #fff
+}
+
+.van-circle__hover {
+    fill: none;
+    stroke: #1989fa;
+    stroke-linecap: round
+}
+
+.van-circle__text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 .2857rem;
+    color: #323233;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.4286rem;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.game-item-wrap {
+    position: relative;
+    color: #fff;
+    border-radius: 1.0714rem
+}
+
+.game-item-wrap.is-show-name {
+    border-radius: 1.0714rem;
+    overflow: hidden;
+    background: linear-gradient(rgba(47, 61, 69, .6), rgba(47, 55, 73, .9))
+}
+
+.game-item-wrap.is-show-name .item-game {
+    border-radius: .1429rem
+}
+
+.game-item-wrap.is-show-name .game-name {
+    position: unset;
+    background: transparent;
+    font-size: .8571rem;
+    box-sizing: border-box;
+    padding: .4286rem .2857rem .4286rem;
+    color: #98a7b5
+}
+
+.game-item-wrap.is-disabled {
+    filter: grayscale(1)
+}
+
+.game-item-wrap .item-game {
+    position: relative;
+    border-radius: 1.0714rem;
+    min-width: 6.4286rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden
+}
+
+.game-item-wrap .item-game.is-game {
+    background: url(../img/logo2.c9920ea4.svg) 50%/contain no-repeat
+}
+
+.game-item-wrap .item-game:after {
+    display: block;
+    content: "";
+    padding-bottom: 100%
+}
+
+.game-item-wrap .item-game img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    z-index: 1
+}
+
+.game-item-wrap .item-game .logo {
+    width: 80%;
+    height: 75%;
+    background: url(../img/logo2.c9920ea4.svg) 50%/contain no-repeat
+}
+
+.game-item-wrap .game-name {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    font-family: Proxima Nova;
+    background: linear-gradient(rgba(47, 61, 69, .6), rgba(63, 74, 98, .9));
+    padding: .4286rem .4286rem .7143rem;
+    word-break: break-word;
+    z-index: 0;
+    font-weight: 700;
+    line-height: 1.1429rem;
+    width: 100%
+}
+
+.game-item-wrap .game-name .text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2
+}
+
+.game-item-wrap .game-name:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -1.4286rem;
+    height: 1.4286rem;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(47, 61, 69, .6))
+}
+
+.game-item-wrap .info {
+    padding: 1.7857rem 1.0714rem;
+    border-radius: 1.0714rem;
+    position: relative
+}
+
+.game-item-wrap .info .img {
+    position: absolute;
+    top: -1.0714rem;
+    right: -1.0714rem;
+    width: 8.5714rem;
+    height: 6.0714rem;
+    -o-object-fit: contain;
+    object-fit: contain
+}
+
+.game-item-wrap .info .name {
+    font-size: 1.7857rem;
+    margin-bottom: 1.0714rem;
+    font-weight: 600
+}
+
+.game-item-wrap .info .des {
+    font-size: .9286rem
+}
+
+.password-change-wrap {
+    padding: 3.5714rem 1.4286rem
+}
+
+.password-change .van-field--error {
+    overflow: unset
+}
+
+.password-change .van-field--error .van-field__error-message {
+    position: absolute;
+    bottom: -2.1429rem;
+    white-space: nowrap
+}
+
+.password-change .van-field {
+    border-radius: 1.6429rem;
+    padding: .5714rem 1.1429rem
+}
+
+.password-change .van-field input:-webkit-autofill,
+.password-change .van-field input:-webkit-autofill:active,
+.password-change .van-field input:-webkit-autofill:focus,
+.password-change .van-field input:-webkit-autofill:hover {
+    -webkit-transition-delay: 99999s;
+    -webkit-transition: color 99999s ease-out, background-color 99999s ease-out
+}
+
+.password-change .van-field.van-field--disabled {
+    background: #43545c
+}
+
+.password-change .van-field+.van-field {
+    margin-top: 1.4286rem
+}
+
+.password-change .send-code-field {
+    overflow: unset
+}
+
+.password-change .send-code-field .van-field__control {
+    width: calc(100% - 6.8571rem)
+}
+
+.password-change .van-field__button {
+    position: absolute;
+    right: -1.2143rem;
+    top: -.5714rem;
+    z-index: 1
+}
+
+.password-change .van-field__button .van-button {
+    height: 2.8571rem;
+    border-radius: 1.6429rem;
+    width: 5.7143rem
+}
+
+.password-change .password-tips {
+    margin-top: 2.1429rem;
+    margin-bottom: 1.4286rem;
+    font-size: .8571rem;
+    color: #819ba8;
+    line-height: 1.4286rem
+}
+
+.password-change .login-button {
+    margin-top: 1.4286rem
+}
+
+.password-change .login-button .van-button {
+    height: 2.8571rem
+}
+
+.password-change .main-tips {
+    margin-bottom: 1.4286rem
+}
+
+.password-change .email-tips {
+    text-align: center;
+    padding: 1.0714rem;
+    color: #ccc
+}
